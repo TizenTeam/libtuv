@@ -19,7 +19,6 @@ Summary: Asynchronous I/O for embedded system
 Group: Development/System
 License: Apache-2.0 and MIT
 Source:     %{name}-%{version}.tar.gz
-Source1:    %{name}.pc.in
 Source1001: %{name}.manifest
 ExclusiveArch: %arm %ix86 x86_64
 
@@ -43,7 +42,6 @@ Development libraries for %{name}
 
 %prep
 %setup -q -c
-cp %{SOURCE1} .
 cp %{SOURCE1001} .
 
 %build
