@@ -22,7 +22,7 @@ SET(exec_prefix "${prefix}/bin")
 SET(includedir "${prefix}/include/${PROJECT_NAME}")
 SET(libdir "${prefix}/lib")
 SET(libname "${PROJECT_NAME}")
-CONFIGURE_FILE(${libname}.pc.in ${libname}.pc @ONLY)
+CONFIGURE_FILE(config/${libname}.pc.in ${libname}.pc @ONLY)
 
 # gbs-tizen specific
 if(DEFINED TARGET_BOARD)
